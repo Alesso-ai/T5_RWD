@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        Unidades relativas
+        1.Porcentaje %
+        2.em (tamaño de fuente del contexto) y rem (tamaño de fuente del root <html>)
+        1em = 100% del tamaño de fuente en el contexto (padding interno o margenes internos)
+        1rem = 100% del tamaño de fuente en el root (Layouts, margenes)
+        3.unidades de viewport: vw,vh,vmin,vmax 
+        1vw = 1% del ancho del viewport
+        1vh = 1% del alto del viewport
+        1vmin = 1% del lado menor del viewport
+        1vmax = 1% del lado mayor del viewport   
+        
+        */
+
+        body{
+            font-size: 20px;
+
+        }
+        p{
+            font-size: 2em;
+            padding: .5em;
+            background: yellow;
+            margin:0 auto;
+            width: 75%;
+            min-width: 320px;
+            max-width: 800px;
+        }
+
+        button{
+            font-size: 1.5rem;
+            padding: 1rem;
+            background: red;
+            border: none;
+            color: white;
+            margin: 1rem;
+            border: none;
+            border-radius: .75em;
+            
+        }
+        span{
+            font-size: 2em;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti,
+      quo, iusto suscipit, dicta dolores nam molestiae magni debitis nulla
+      recusandae rem perspiciatis totam incidunt quasi? Maxime quisquam tempore
+      ea?
+    </p>
+    <button>Hola Tunivers</button>
+    <p>Hola Mundo</p>
+    <footer>Footer</footer>
+
+  </body>
+</html>
